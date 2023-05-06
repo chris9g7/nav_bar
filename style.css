@@ -1,0 +1,100 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: gray;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.logo img {
+    height: 4rem;
+    margin: 1.5rem;
+
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header {
+    background-color: black
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+ul li a,
+.btn {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(95, 164, 141);
+    font-weight: 700;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a:hover {
+    color: blueviolet;
+    transition: 0.30s;
+
+}
+
+.btn {
+    background-color: seagreen;
+    border: none;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    background-color: rgb(202, 91, 51);
+    transition: 0.30s;
+}
+
+
+#bun {
+    color: rgb(149, 139, 139);
+    font-size: 2rem;
+    margin-right: 3rem;
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    #bun {
+        display: flex;
+        cursor: pointer;
+    }
+
+    ul {
+        display: none;
+    }
+
+    ul.ham_active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+
+    }
+
+    .btn {
+        width: 20%;
+
+    }
+}
